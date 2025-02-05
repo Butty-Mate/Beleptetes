@@ -1,0 +1,7 @@
+02.13  - kinézet, input, output, algoritmus 
+02.20 - program 
+03.07 - kód, dokumentáció
+03.14 - 1 jegy minusz (elcsúszás) 
+
+tanar.pza@szbi-pg.hu
+simicz.zalan@diak.szbi-pg.hu - github
