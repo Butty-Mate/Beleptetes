@@ -1,0 +1,10 @@
+C:\Users\mate2\Desktop\roulette_kerek\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\mate2\Desktop\roulette_kerek\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\mate2\Desktop\roulette_kerek\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+C:\Users\mate2\Desktop\roulette_kerek\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.AssemblyReference.cache
+C:\Users\mate2\Desktop\roulette_kerek\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Beléptető_Rendszer.resources
+C:\Users\mate2\Desktop\roulette_kerek\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\mate2\Desktop\roulette_kerek\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+C:\Users\mate2\Desktop\roulette_kerek\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\mate2\Desktop\roulette_kerek\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\mate2\Desktop\roulette_kerek\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb

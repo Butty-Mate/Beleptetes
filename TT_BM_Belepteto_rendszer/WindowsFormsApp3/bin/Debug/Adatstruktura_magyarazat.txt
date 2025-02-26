@@ -1,0 +1,14 @@
+Adatstruktúra magyarázata
+
+Mezők és kódok
+-----------------
+- Név: 10101 - A felhasználó neve bináris formában.
+- Személyi igazolvány: 10010 - A személyi igazolvány száma bináris formában.
+- Vezet: 11011 - Logikai érték: 1 (igen) vagy 0 (nem).
+- Betöltötte a 18-at: 11100 - Logikai érték: 1 (igen) vagy 0 (nem).
+- Iszik: 11111 - Logikai érték: 1 (igen) vagy 0 (nem).
+- Gyanús személy: 11101 - Logikai érték: 1 (igen) vagy 0 (nem). Ha a stresszszint > 60, akkor 1, egyébként 0.
+---------------------
+- A szöveges adatok karakterenként bináris formába kerülnek átalakításra.
+- Minden adat külön sorba kerül, és személyenként két üres sor választja el az adatokat.
+- Az új adatok a régi fájlhoz kerülnek hozzáadásra.
