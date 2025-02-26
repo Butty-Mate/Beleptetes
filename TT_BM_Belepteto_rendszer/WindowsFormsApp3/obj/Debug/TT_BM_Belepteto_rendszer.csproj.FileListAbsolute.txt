@@ -8,3 +8,13 @@ C:\Users\mate2\Desktop\roulette_kerek\WindowsFormsApp3\WindowsFormsApp3\obj\Debu
 C:\Users\mate2\Desktop\roulette_kerek\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\TT_BM_Belepteto_rendszer.csproj.CoreCompileInputs.cache
 C:\Users\mate2\Desktop\roulette_kerek\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
 C:\Users\mate2\Desktop\roulette_kerek\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+D:\munka\Beleptetes\TT_BM_Belepteto_rendszer\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+D:\munka\Beleptetes\TT_BM_Belepteto_rendszer\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+D:\munka\Beleptetes\TT_BM_Belepteto_rendszer\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+D:\munka\Beleptetes\TT_BM_Belepteto_rendszer\WindowsFormsApp3\obj\Debug\TT_BM_Belepteto_rendszer.csproj.AssemblyReference.cache
+D:\munka\Beleptetes\TT_BM_Belepteto_rendszer\WindowsFormsApp3\obj\Debug\TT_BM_Belepteto_rendszer.Beléptető_Rendszer.resources
+D:\munka\Beleptetes\TT_BM_Belepteto_rendszer\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+D:\munka\Beleptetes\TT_BM_Belepteto_rendszer\WindowsFormsApp3\obj\Debug\TT_BM_Belepteto_rendszer.csproj.GenerateResource.cache
+D:\munka\Beleptetes\TT_BM_Belepteto_rendszer\WindowsFormsApp3\obj\Debug\TT_BM_Belepteto_rendszer.csproj.CoreCompileInputs.cache
+D:\munka\Beleptetes\TT_BM_Belepteto_rendszer\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+D:\munka\Beleptetes\TT_BM_Belepteto_rendszer\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb

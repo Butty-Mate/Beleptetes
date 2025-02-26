@@ -11,6 +11,12 @@ namespace TT_BM_Belepteto_rendszer
         public Beléptető_Rendszer()
         {
             InitializeComponent();
+            Tick();
+            Timer timer = new Timer();
+            timer.Tick += button2_Click;
+            timer.Start();
+          
+            timer.Interval = 2000;
             textBox1.Text = "Gipsz Jakab";
             textBox2.Text = "123456BB";
             textBox1.ForeColor = Color.Gray;
@@ -21,15 +27,31 @@ namespace TT_BM_Belepteto_rendszer
             textBox2.Leave += txtSzemelyiSzam_Leave;
             textBox1.TextChanged += EllenorizMezoket;
             textBox2.TextChanged += EllenorizMezoket;
-            checkBox1.CheckedChanged += CheckBox_CheckedChanged;
-            checkBox2.CheckedChanged += CheckBox_CheckedChanged;
-            checkBox3.CheckedChanged += CheckBox_CheckedChanged;
-            checkBox4.CheckedChanged += CheckBox_CheckedChanged;
-            checkBox5.CheckedChanged += CheckBox_CheckedChanged;
-            checkBox6.CheckedChanged += CheckBox_CheckedChanged;
+            checkBox1.Click += CheckBox_CheckedChanged;
+            checkBox2.Click += CheckBox_CheckedChanged;
+            checkBox3.Click += CheckBox_CheckedChanged;
+            checkBox4.Click += CheckBox_CheckedChanged;
+            checkBox5.Click += CheckBox_CheckedChanged;
+            checkBox6.Click += CheckBox_CheckedChanged;
+            button2.Visible = false;
             button1.Enabled = false;
         }
+        private void Tick()
+        {
+            Random veletlen = new Random();
+            int stresszint = veletlen.Next(0, 101);
+            textBox3.Text = stresszint.ToString();
+            textBox3.Visible = true;
 
+            if (stresszint > 60)
+            {
+                textBox3.ForeColor = Color.Red;
+            }
+            else
+            {
+                textBox3.ForeColor = Color.Green;
+            }
+        }
         private void txtNev_Enter(object sender, EventArgs e)
         {
             if (textBox1.Text == "Gipsz Jakab")
@@ -93,11 +115,7 @@ namespace TT_BM_Belepteto_rendszer
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (string.IsNullOrWhiteSpace(textBox3.Text))
-            {
-                MessageBox.Show("Kérjük, mérje meg a stresszszintet a belépés előtt!");
-                return;
-            }
+            
 
             string nev = textBox1.Text;
             string szemelyiSzam = textBox2.Text;
@@ -105,17 +123,6 @@ namespace TT_BM_Belepteto_rendszer
             bool betoltotte18 = checkBox3.Checked;
             bool iszik = checkBox5.Checked;
 
-            if (!betoltotte18 && iszik)
-            {
-                MessageBox.Show("Nem vagy elég idős az alkoholfogyasztáshoz.");
-                return;
-            }
-
-            if (vezet && iszik)
-            {
-                MessageBox.Show("Nem ihat alkoholt, ha vezet.");
-                return;
-            }
 
             MessageBox.Show("Belépés engedélyezve.");
             MentesFajlba(nev, szemelyiSzam, vezet, betoltotte18, iszik);
@@ -124,19 +131,7 @@ namespace TT_BM_Belepteto_rendszer
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Random veletlen = new Random();
-            int stresszint = veletlen.Next(0, 101);
-            textBox3.Text = stresszint.ToString();
-            textBox3.Visible = true;
-
-            if (stresszint > 60)
-            {
-                textBox3.ForeColor = Color.Red;
-            }
-            else
-            {
-                textBox3.ForeColor = Color.Green;
-            }
+            Tick();
         }
 
         private void MentesFajlba(string nev, string szemelyiSzam, bool vezet, bool betoltotte18, bool iszik)
@@ -219,6 +214,31 @@ namespace TT_BM_Belepteto_rendszer
 
 
             bool iszikEngedelyezett = (!checkBox5.Checked || (checkBox3.Checked && !checkBox1.Checked));
+        
+            bool vezet = checkBox1.Checked;
+            bool nembetoltotte18 = checkBox4.Checked;
+            bool iszik = checkBox5.Checked;
+
+            
+            if (nembetoltotte18 && iszik)
+            {
+                
+                if (vezet && iszik)
+                {
+                    MessageBox.Show("Nem ihat alkoholt, ha vezet. \nNem vagy elég idős az alkoholfogyasztáshoz.");
+
+                }
+                else MessageBox.Show("Nem vagy elég idős az alkoholfogyasztáshoz.");
+            }
+            else if (vezet && iszik)
+            {
+                if (nembetoltotte18 && iszik)
+                {
+                    MessageBox.Show("Nem ihat alkoholt, ha vezet. \nNem vagy elég idős az alkoholfogyasztáshoz.");
+
+                }
+                else MessageBox.Show("Nem ihat alkoholt, ha vezet.");
+            }
 
             button1.Enabled = nevHelyes && szemelyiSzamHelyes && vezetHelyes && betoltotte18Helyes && iszikHelyes && iszikEngedelyezett;
         }
